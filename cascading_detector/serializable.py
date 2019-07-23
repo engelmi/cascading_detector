@@ -14,7 +14,8 @@ class Serializable(object):
         with open(filename, "w") as f:
             json.dump(jsonpickle.encode(self), f)
 
-    def read_from_file(path_to_file):
+    @classmethod
+    def read_from_file(cls, path_to_file):
         if not isfile(path_to_file):
             raise FileNotFoundError("Couldn't find file '" + path_to_file + "'")
         with open(path_to_file, "rb") as f:
