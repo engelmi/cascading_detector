@@ -2,7 +2,7 @@ joblib
 jsonpickle
 matplotlib
 numpy==1.16.2
-Pillow==6.2.0
+Pillow==9.3.0
 scipy==1.2.1
 scikit-learn==0.20.3
 scikit-image==0.15.0
